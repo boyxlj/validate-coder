@@ -1,7 +1,7 @@
 {
   "name": "validate-coder",
-  "version": "0.0.1",
-  "main": "index.ts",
+  "version": "0.0.2",
+  "main": "validate-coder.ts",
   "license": "MIT",
   "description": "一个简单的验证码实现",
   "author": "x709500@163.com",

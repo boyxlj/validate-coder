@@ -29,6 +29,7 @@ var getCode = function (container, bgColor) {
     }
     container.style.backgroundColor = bgColor;
     container.style.filter = 'blur(0.2px)';
+    container.style.userSelect = 'none';
     container.innerHTML = str;
     return res;
 };
