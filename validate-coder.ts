@@ -1,7 +1,7 @@
-const getCode = (container?: any, bgColor = 'gray'): number => {
-  if(!container) return -1
+export const getValidateCoder = (container: HTMLDivElement, bgColor: string = 'gray'): string => {
+  if (!container) return '-1'
   const res: number = Math.floor(Math.random() * (9999 - 1001) + 1001);
-  let str:string = "";
+  let str: string = "";
   const degList: number[] = [];
   const colorList: string[] = [];
   for (let index = 0; index < 4; index++) {
@@ -18,7 +18,6 @@ const getCode = (container?: any, bgColor = 'gray'): number => {
     const b = Math.floor(Math.random() * 256);
     colorList.push(`rgb(${r},${g},${b})`);
   }
-
   for (let idx = 0; idx < res.toString().length; idx++) {
     str += `
       <span style='transform:rotate(${degList[idx]}deg);
@@ -36,7 +35,5 @@ const getCode = (container?: any, bgColor = 'gray'): number => {
   container.style.filter = 'blur(0.2px)'
   container.style.userSelect = 'none'
   container.innerHTML = str;
-  return res;
+  return res + '';
 };
-
-export { getCode }

@@ -1,6 +1,6 @@
 {
   "name": "validate-coder",
-  "version": "0.0.2",
+  "version": "0.0.5",
   "main": "validate-coder.ts",
   "license": "MIT",
   "description": "一个简单的验证码实现",
@@ -9,6 +9,5 @@
     "Vue",
     "react",
     "typescript"
-
   ]
 }

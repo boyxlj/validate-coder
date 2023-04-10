@@ -1,10 +1,10 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.getCode = void 0;
-var getCode = function (container, bgColor) {
+exports.getValidateCoder = void 0;
+var getValidateCoder = function (container, bgColor) {
     if (bgColor === void 0) { bgColor = 'gray'; }
     if (!container)
-        return -1;
+        return '-1';
     var res = Math.floor(Math.random() * (9999 - 1001) + 1001);
     var str = "";
     var degList = [];
@@ -31,6 +31,6 @@ var getCode = function (container, bgColor) {
     container.style.filter = 'blur(0.2px)';
     container.style.userSelect = 'none';
     container.innerHTML = str;
-    return res;
+    return res + '';
 };
-exports.getCode = getCode;
+exports.getValidateCoder = getValidateCoder;
